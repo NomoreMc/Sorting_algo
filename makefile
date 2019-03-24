@@ -10,3 +10,4 @@ sort.o : sort.c
 .PHONY : clean
 clean:
 	-rm sort.o main.o
+	-rm sort.h.gch edit
