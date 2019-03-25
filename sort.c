@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-int partition(int a[], int lo, int hi);
-int partition2(int a[], int lo, int hi);
-void merge(int a[], int lo, int mid, int hi);
-
+int partition(int *, int, int);
+int partition2(int *, int, int);
+void merge(int *, int, int, int);
+//int ncompares=0;
+//int nswaps=0;
+//int nmoves=0;
 
 void insertionSort(int a[], int lo, int hi){
     int i,j,temp;
@@ -16,6 +18,7 @@ void insertionSort(int a[], int lo, int hi){
         }
         a[j]=temp;
     }
+    //printf("#compares: %D, #swaps: %d, #moves: %d\n", ncompares,nswaps,nmoves);
 }
 
 void selectionSort(int a[], int lo, int hi){
