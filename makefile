@@ -9,5 +9,10 @@ sort.o : sort.c
 	cc -c sort.c
 .PHONY : clean
 clean:
+<<<<<<< HEAD
 	-rm sort.o main.o test
 	-rm sort.h.gch
+=======
+	-rm sort.o main.o
+	-rm sort.h.gch edit
+>>>>>>> refs/remotes/origin/master
